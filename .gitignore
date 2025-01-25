@@ -1,0 +1,36 @@
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails and Icon Files
+Icon?
+._*
+
+# Temporary Files
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Node.js
+node_modules/
+
+# Logs
+*.log
+
+# IDE-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Build directories
+build/
+dist/
+*.egg-info/
+
+# OS-specific files (if applicable)
+*.DS_Store
+*.AppleDouble
+*.LSOverride
