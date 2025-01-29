@@ -1,7 +1,8 @@
 :root {
   --main: #f26457;
   --second: #f2eadf;
-  --font: #483938;
+  --font-main: #483938;
+  --font-second: #736463;
 }
 
 * {
@@ -38,6 +39,7 @@ nav {
 .hero {
   background-color: var(--second);
   padding: 0em 10em;
+  margin-bottom: 280px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,7 +64,7 @@ nav {
 .hero h1 {
   font-family: "Inter", serif;
   font-weight: 900;
-  color: var(--font);
+  color: var(--font-main);
   font-size: 3rem;
   margin-bottom: 20px;
 }
@@ -75,7 +77,7 @@ nav {
   font-size: 1rem;
   margin: 0;
   font-family: Inter;
-  color: var(--font);
+  color: var(--font-second);
 }
 
 .hero button {
@@ -95,19 +97,103 @@ nav {
   background-color: #45a049;
 }
 
-.hero-image {
-}
-
 .hero img {
   width: 80%;
   height: 80%;
   margin-bottom: -150px; /* Overlapping the background */
 }
 
+.highlight {
+  padding: 0 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-highlight {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0;
+  text-align: left;
+}
+
+.products {
+  display: flex;
+}
+
+.product {
+  background-color: var(--second);
+  width: 300px;
+  height: 214px;
+  margin: 1em;
+}
+
+h2 {
+  color: var(--font-main);
+  font-size: 2.5rem;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.product img {
+  height: auto;
+  width: 200px;
+  margin-top: -200px;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-name {
+  font-family: Inter;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--font-second);
+  margin-bottom: 8px;
+}
+
+.price {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(--font-second);
+}
+
+.shopping-basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background-color: var(--main);
+  border-radius: 5px;
+  margin-left: -190px;
+  margin-bottom: -120px;
+}
+
+.shopping-basket .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 900, "GRAD" 0, "opsz" 24;
+  font-size: 29px;
+  color: white;
+}
 /* Swap order on mobile */
 @media (max-width: 768px) {
   .hero {
     padding: 1.5em;
+    margin-bottom: 50px;
   }
   .hero-inner {
     flex-direction: column;
@@ -122,5 +208,17 @@ nav {
     margin: 0;
     width: 100%;
     height: 100%;
+  }
+
+  .inner-highlight {
+    flex-direction: column;
+  }
+
+  .inner-highlight h2 {
+    margin-bottom: 150px;
+  }
+
+  .products {
+    flex-direction: column;
   }
 }
