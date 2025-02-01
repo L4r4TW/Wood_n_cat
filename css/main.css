@@ -145,7 +145,7 @@ h2 {
   justify-content: center;
 }
 .product img {
-  height: auto;
+  height: 249.78px;
   width: 200px;
   margin-top: -200px;
 }
@@ -189,6 +189,33 @@ h2 {
   font-size: 29px;
   color: white;
 }
+
+.products-section {
+  padding: 0 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10em;
+}
+
+.inner-products-section h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+
+.inner-products-section .products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.inner-products-section .products .product {
+}
+
 /* Swap order on mobile */
 @media (max-width: 768px) {
   .hero {
@@ -220,5 +247,9 @@ h2 {
 
   .products {
     flex-direction: column;
+  }
+
+  .products .product:nth-child(2) {
+    margin-top: 10em;
   }
 }
