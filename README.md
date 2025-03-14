@@ -54,7 +54,7 @@ Wood_n_cat/
    ```
 2. **Navigate into the project:**
    ```bash
-   cd WoodnCat
+   cd Wood_n_cat
    ```
 3. **Open `index.html` in the browser** (for now, only frontend is available).
 
